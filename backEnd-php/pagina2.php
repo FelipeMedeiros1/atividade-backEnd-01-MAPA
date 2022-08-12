@@ -37,24 +37,28 @@ include("dados.php");
     </nav>
   </header>
   <section>
+
     <h1>Boa escolha!</h1>
     <?php
-    $id = $_GET['id'];
+      $id = $_GET['id'];
     
-    foreach ($cardapio as $chave => $valor) {
+      foreach ($cardapio as $chave => $valor) {
       if ($valor['id'] == $id) {
-    ?>
+      ?>
     <div>
+
       <a href=""> <img width="300px" height="250px" src=<?=$valor['imagem']; ?>></a>
       <h3><?=$valor['nome'] ?></h3>
       <p><?=$valor['descricao'] ?></p>
+      <button type="submit">Finalizar pedido </button>
+      <input type="submit" class="add-carrinho" value="Adicionar ao carrinho" />
 
     </div>
 
     <?php
-      }
-    }
-    ?>
+       }
+     }
+     ?>
 
   </section>
 
@@ -67,19 +71,19 @@ include("dados.php");
     ?>
 
     <div>
-      <a href=""> <img width="300px" height="250px" src=<?=$valor['imagem']; ?>></a>
-      <p><?=$valor['nome'] ?></p>
-    </div>
+      <a href="pagina2.php?id=<?=$valor["id"]; ?> "> <img width="300px" height="250px" src=<?=$valor['imagem']; ?>></a>
+      <h3><?=$valor['nome']; ?></h3>
+      <p><?=$valor['preco']; ?></p>
 
-    <?php
+      <?php
       }
     }
     ?>
 
 
-    <div>
-      <h2>Todos nossos produtos são feitos diariamente.</h2>
-    </div>
+      <div>
+        <h2>Todos nossos produtos são feitos diariamente.</h2>
+      </div>
   </section>
   <footer>
     <div>
