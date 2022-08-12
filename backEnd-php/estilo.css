@@ -9,17 +9,13 @@ body {
 }
 
 header {
-  background: linear-gradient(
-    to bottom,
-    rgb(197, 163, 129),
-    rgba(146, 123, 102, 0.377)
-  );
+  background: linear-gradient(to bottom, rgb(232, 191, 150), rgb(166, 69, 17));
   text-align: center;
   padding-top: 30px;
 }
 
 section {
-  background: linear-gradient(to top, rgb(141, 118, 95), rgb(197, 163, 129));
+  background: linear-gradient(to bottom, rgb(232, 191, 150), rgb(166, 69, 17));
   border: 1px solid rgb(192, 192, 192);
   width: 600px;
   margin: 30px auto;
@@ -69,7 +65,7 @@ p {
   padding: 5px;
 }
 footer {
-  background: linear-gradient(to top, rgb(197, 163, 129), rgb(102, 84, 67));
+  background: linear-gradient(to bottom, rgb(232, 191, 150), rgb(166, 69, 17));
   text-align: center;
   margin: 30px auto;
   padding: 10px;
